@@ -766,6 +766,20 @@ boost_library(
 )
 
 boost_library(
+    name = "lockfree",
+    deps = [
+        ":config",
+        ":detail",
+        ":mpl",
+        ":preprocessor",
+        ":ptr_container",
+        ":range",
+        ":static_assert",
+        ":type_traits",
+    ],
+)
+
+boost_library(
     name = "math",
     hdrs = [
         "boost/cstdint.hpp",
